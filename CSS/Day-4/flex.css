@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .container {
     height: 400px;
     border: 2px solid green;
@@ -8,22 +12,30 @@
     align-items: flex-start;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .box {
     border: 1px solid brown;
     width: 70px;
     background-color: aqua;
+    /* flex-basis: 100px; */
+    flex-basis: 50%;
 }
 #box1 {
     order:1;
+    /* flex-grow: 1; */
+    /* align-self: stretch; */
 }
 #box3 {
     order: 3;
+    /* flex-shrink:4; */
+    /* align-self: flex-start; */
 }
 #box4 {
     order: 2;
+    /* align-self: flex-end; */
 }
 #box2 {
     order: 2;
+    /* align-self: center; */
 }
